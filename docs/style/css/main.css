@@ -413,6 +413,9 @@ footer {
   background-color: #e8471b; }
 
 @media (max-width: 768px) {
+  .using {
+    flex-direction: column; }
+
   .navbar {
     flex-direction: column; }
 
