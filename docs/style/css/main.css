@@ -145,6 +145,7 @@ footer {
   align-items: center; }
 
 .menu {
+  z-index: 0;
   min-width: 500px;
   min-height: 500px;
   background-image: url("../../img/start.png");
@@ -156,7 +157,8 @@ footer {
   position: relative;
   left: -35px; }
   .menu__visible {
-    display: flex !important; }
+    display: flex !important;
+    transition: all 0.5s; }
   .menu__teacher {
     background-color: #e8471b;
     top: 50px;
@@ -181,7 +183,8 @@ footer {
     align-items: center;
     font-size: 5rem;
     color: white;
-    display: none; }
+    display: none;
+    z-index: 1; }
   .menu__mail:hover, .menu__home:hover, .menu__teacher:hover {
     width: 135px;
     height: 135px;
@@ -257,11 +260,37 @@ footer {
   .symbols {
     bottom: 170px; }
 
+  .rightside {
+    justify-content: center;
+    display: flex;
+    flex-direction: column; }
+
   .bg-red {
+    width: 90%;
     height: 200px;
+    margin: 0 auto;
     margin-top: 100px; }
     .bg-red .kenguru {
-      width: 40%; } }
+      width: 40%; }
+
+  .educational__title {
+    font-size: 1.3rem; }
+  .educational__body {
+    font-size: 0.8rem; }
+
+  .bg-green {
+    width: 90%;
+    margin: 0 auto; }
+    .bg-green .lamp {
+      width: 100px;
+      height: 100px;
+      right: 0;
+      bottom: 80px; }
+
+  .bg-blue {
+    width: 90%; }
+    .bg-blue .specialists {
+      font-size: 0.8rem; } }
 @media (max-width: 1600px) {
   .wraper {
     flex-direction: column;

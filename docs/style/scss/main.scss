@@ -141,6 +141,7 @@ footer{
 }
 
 .menu{
+    z-index: 0;
     min-width: 500px;
     min-height: 500px;
     background-image: url("../../img/start.png");
@@ -154,6 +155,7 @@ footer{
    
     &__visible{
         display: flex !important;
+        transition: all 0.5s;
     }
     &__teacher{
         background-color: #e8471b;   
@@ -165,6 +167,7 @@ footer{
         }
     }
     &__home{
+       
         background-color: #009dcc;
         top: 185px;
         left: -35px;
@@ -186,6 +189,7 @@ footer{
         font-size: 5rem;
         color:white;
         display: none;
+        z-index: 1;
         
     }
     &__mail:hover, &__home:hover, &__teacher:hover{
@@ -272,14 +276,44 @@ footer{
     .symbols{
         bottom: 170px;
     }
+    .rightside{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
     .bg-red{
-       
+        width: 90%;
         height: 200px;
+        margin: 0 auto;
         .kenguru{
             width: 40%;
             
         }
         margin-top: 100px;
+    }
+    .educational{
+        &__title{
+            font-size: 1.3rem;
+        }
+        &__body{
+            font-size: 0.8rem;
+        }
+    }
+    .bg-green{
+        width: 90%;
+        margin: 0 auto;
+        .lamp{
+            width: 100px;
+            height: 100px;
+            right: 0;
+            bottom: 80px;
+        }
+    }
+    .bg-blue{
+        width: 90%;
+        .specialists{
+            font-size: 0.8rem;
+        }
     }
 }
 @media (max-width: 1600px)
@@ -300,5 +334,6 @@ footer{
         min-width: 250px;
         min-height: 250xp;
     }
+    
     
 }
