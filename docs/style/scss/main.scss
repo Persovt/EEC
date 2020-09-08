@@ -455,6 +455,29 @@ footer{
 }
 
 @media (max-width: 768px){
+    .menu{
+        &__mail, &__home, &__teacher{
+        width: 75px !important;
+        height: 75px !important;
+        font-size: 2.5rem;
+        }
+        &__teacher{
+            top: 100px;
+            right: 140px;
+            
+        }
+        &__home{
+           
+            
+            top: 240px;
+            left: 0px;
+        }
+        &__mail{
+           
+            bottom: 30px;
+            left: 160px;
+        }
+    }
     .using{
         flex-direction: column;
     }
@@ -471,6 +494,10 @@ footer{
     .menu{
         min-width: 400px;
         min-height: 400px;
+    }
+    .menu{
+        min-width: 450px;
+        min-height: 450px;
     }
     .bg-blue{
         max-width: 400px !important;
@@ -534,8 +561,36 @@ footer{
 }
 @media(max-width: 425px){
     .menu{
-        min-width: 250px;
-        min-height: 250xp;
+        &__mail, &__home, &__teacher{
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 2rem;
+        }
+        &__teacher{
+            top: 50px;
+            right: 70px;
+            
+        }
+        &__home{
+           
+            
+            top: 140px;
+            left: 0px;
+        }
+        &__mail{
+           
+            bottom: 20px;
+            left: 110px;
+        }
+    }
+    .menu{
+        left: 10px;
+        min-width: 250px !important; 
+        min-height: 250px !important;
+    }
+    .menu:hover{
+        min-width: 300px !important;
+        min-height: 300px !important;
     }
     
     

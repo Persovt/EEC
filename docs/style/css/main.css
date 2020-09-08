@@ -415,6 +415,20 @@ footer {
   background-color: #e8471b; }
 
 @media (max-width: 768px) {
+  .menu__mail, .menu__home, .menu__teacher {
+    width: 75px !important;
+    height: 75px !important;
+    font-size: 2.5rem; }
+  .menu__teacher {
+    top: 100px;
+    right: 140px; }
+  .menu__home {
+    top: 240px;
+    left: 0px; }
+  .menu__mail {
+    bottom: 30px;
+    left: 160px; }
+
   .using {
     flex-direction: column; }
 
@@ -430,6 +444,10 @@ footer {
   .menu {
     min-width: 400px;
     min-height: 400px; }
+
+  .menu {
+    min-width: 450px;
+    min-height: 450px; }
 
   .bg-blue {
     max-width: 400px !important;
@@ -480,6 +498,25 @@ footer {
   .bg-blue {
     margin-top: 300px !important; } }
 @media (max-width: 425px) {
+  .menu__mail, .menu__home, .menu__teacher {
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 2rem; }
+  .menu__teacher {
+    top: 50px;
+    right: 70px; }
+  .menu__home {
+    top: 140px;
+    left: 0px; }
+  .menu__mail {
+    bottom: 20px;
+    left: 110px; }
+
   .menu {
-    min-width: 250px;
-    min-height: 250xp; } }
+    left: 10px;
+    min-width: 250px !important;
+    min-height: 250px !important; }
+
+  .menu:hover {
+    min-width: 300px !important;
+    min-height: 300px !important; } }
