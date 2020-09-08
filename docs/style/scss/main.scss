@@ -346,14 +346,48 @@ footer{
         color: white;
 	}
 }
+.btn-back{
+    font-size: 2rem;
+    position: fixed;
+    color: black;
+    background-color: orange;
+    border-radius: 10px;
+    padding: 2px 15px;
+    top: 25px;
+    left: 25px;
+}
+.btn-back:hover{
+    font-size: 2.4rem;
+    text-shadow: 0 0 4px white;
+    box-shadow: 0 0 5px orange;
+}
+.first-sec{
+    background-color:#51ad30;
+}
+.englishForKids{
+    margin: 0 auto;
+    padding: 25px 0;
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    &__title{
 
-
+    }
+}
+.second-sec{
+    background-color: #e8471b;
+}
 @media (max-width: 768px){
     .navbar{
         flex-direction: column;
     }
     .nav-list{
         flex-direction: column;
+
+    }
+    .nav-item{
+        margin-top: 10px;
     }
     .menu{
         min-width: 400px;
@@ -413,7 +447,7 @@ footer{
         justify-content: center;
     }
     .menu{
-        left:0;
+        left:25px;
     }
     .bg-blue{
         margin-top: 300px !important;
