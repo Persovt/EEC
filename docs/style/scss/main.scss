@@ -6,14 +6,15 @@ body, html{
 .page{
     overflow: hidden;
     min-height: 100%;
-   
+    
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 100%;
 }
-.nav-brand{
-   
+.hide{
+	display: none !important;
 }
+
 .nav-brand-img{
     max-width: 100px;
     max-height: 50px;
@@ -257,6 +258,95 @@ footer{
         transform: translate(-50%,0);
     }
 }
+.background-white{
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.849);
+}
+.form{
+    position: fixed;
+	z-index: 3;
+	width: 80%;
+	height: 80%;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	overflow: scroll;
+	background: radial-gradient(#4CCEB2, #2F8FD8);
+	text-align: center;
+	padding: 25px 0;
+	border-radius: 15px;
+	.input__btn{
+		:hover{
+			cursor: pointer;
+		}
+		margin-top: 20px;
+		font-size: 25px;
+		font-family: 'Conv_TT1046M_';
+		padding: 10px 25px;
+		border-radius: 20px;
+		color: #fff;
+        background: transparent;
+        border: 1px solid white;
+
+    }
+    .input__btn:hover{
+        box-shadow: 0 0 4px white;
+    }
+	fieldset{
+		margin: 0 25px;
+		border: 1px solid white;
+		border-radius: 10px;
+	}
+	textarea{
+		font-size: 20px;
+        margin-bottom: 15px;
+        width: 60%;
+        resize: none;
+	}
+	h2{
+		font-size: 16px;
+		font-family: 'Conv_Noteworthy-Light';
+		opacity: 0.8;
+		color: #fff;
+	}
+	.field {
+		legend{
+			font-size: 20px;
+			padding:15px 0;
+			font-family: 'Conv_TT1046M_';
+			color: white;
+			
+		}
+		label{
+			font-family: 'Conv_museo_sans_cyrl_300';
+			display: block;
+			font-size: 30px;
+			color: #fff;
+		}
+		input{
+			border-radius: 10px;
+			padding: 5px 15px;
+			margin: 20px 0;
+			width: 60%;
+			font-size: 20px;
+		}
+
+
+	}
+	.close__btn{
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+		position: absolute;
+		right: 0;
+        top: 0;
+        cursor: pointer;
+        color: white;
+	}
+}
+
 
 @media (max-width: 768px){
     .navbar{

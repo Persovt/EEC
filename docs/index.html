@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./style/css/main.css">
 </head>
 
-<body>
+<body >
     <div class="page">
         <header class="header">
             <nav class="navbar">
@@ -51,7 +51,7 @@
                     <a class="menu__teacher " href="#"><img src="./img/teacher.png" alt="teacher"></a>
                     <a class="menu__home" href="#"> <i class="fa fa-home" aria-hidden="true"></i></a>
                     
-                    <a class="menu__mail" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    <a class="menu__mail" ><i class="fa fa-envelope" aria-hidden="true"></i></a>
                 </div>
                 <div class="rightside">
                     <div class="bg-green">
@@ -67,6 +67,28 @@
                     </div>
             </div>
             </div>
+
+            <div  class="form hide">
+                <h2>Заполните поля и нажмите кнопку "Отправить"</h2>
+                <form action="">
+                    <fieldset class="field form__contact">
+                        <legend>Контактная информация</legend>
+                        <label class="label__name" for="">Имя</label>
+                        <input class="input__name" type="text" placeholder="Имя">
+                        <label class="label__phone" for="">Телефон</label>
+                        <input class="input__phone" type="text" placeholder="+7 777 8888888">
+                        <label class="label__email" for="">Email</label>
+                        <input class="input__email" type="email" placeholder="office@gmail.com">
+                    </fieldset>
+                    <fieldset class="field form__text">
+                        <legend>Ваш текст</legend>
+                        <textarea name="" id="" cols="40" rows="3"></textarea>
+                    </fieldset>
+                    <input class="input__btn" type="submit" name="" value="Отправить">
+                    <button  class="close__btn">
+                        &#65794;
+                    </button>
+                </form>
         </main>
         <footer>
             <div class="social">
