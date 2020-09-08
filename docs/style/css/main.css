@@ -112,11 +112,12 @@ footer {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 600px;
-  height: 500px;
+  width: 400px;
+  height: 300px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
 
 .specialists {
   width: 50%;
@@ -132,7 +133,7 @@ footer {
 .symbols {
   position: absolute;
   z-index: -99;
-  bottom: 230px;
+  bottom: 130px;
   left: 80px; }
   .symbols img {
     width: 80%; }
@@ -236,10 +237,11 @@ footer {
   background-position: center bottom;
   background-size: contain;
   position: relative;
-  width: 500px;
-  height: 400px;
+  width: 400px;
+  height: 300px;
   margin-top: 200px; }
   .bg-red .kenguru {
+    width: 60%;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -467,7 +469,7 @@ footer {
     width: 90%; }
     .bg-blue .specialists {
       font-size: 0.8rem; } }
-@media (max-width: 1600px) {
+@media (max-width: 1400px) {
   .wraper {
     flex-direction: column;
     justify-content: center; }
